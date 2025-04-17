@@ -14,6 +14,8 @@ import BusinessGrowth from './components/BusinessGrowth'
 import TeamAndServices from './components/TeamAndServices'
 import KeyBenefits from './components/KeyBenefits'
 import ConsultationForm from './components/ConsultationForm'
+import BlogSection from './components/BlogSection'
+import ProjectMember from './components/ProjectMember'
 
 const App = () => {
   return (
@@ -33,6 +35,8 @@ const App = () => {
         <TeamAndServices/>
         <KeyBenefits/>
         <ConsultationForm/>
+        <BlogSection/>
+        <ProjectMember/>
       
     </div>
   )
