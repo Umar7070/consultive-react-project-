@@ -11,6 +11,9 @@ const images = [
   "https://fastwpdemo.com/demo/consultive/wp-content/uploads/2022/04/2-2.jpg",
   "https://fastwpdemo.com/demo/consultive/wp-content/uploads/2022/04/3-2.jpg",
   "https://fastwpdemo.com/demo/consultive/wp-content/uploads/2022/04/5.jpg",
+  "https://fastwpdemo.com/demo/consultive/wp-content/uploads/2022/04/5.jpg",
+  "https://fastwpdemo.com/demo/consultive/wp-content/uploads/2022/04/5.jpg",
+  "https://fastwpdemo.com/demo/consultive/wp-content/uploads/2022/04/5.jpg",
 ];
 
 const ITEMS_PER_PAGE = 9;
@@ -32,18 +35,18 @@ export default function ImageGridSlider() {
         {currentImages.map((img, idx) => (
           <div
             key={idx}
-            className="relative w-[400px] h-[300px] bg-gray-200 shadow rounded overflow-hidden group"
+            className="relative w-[400px] h-[300px] bg-gray-200 shadow rounded overflow-hidden group hover:scale-105 transition-transform duration-300"
           >
-            {/* Hover Overlay */}
-            <div className="absolute inset-0 bg-sky-400 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out opacity-80 z-10 flex items-center justify-center">
-              <span className="text-white text-lg font-semibold">View</span>
+            {/* Slide Down Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-sky-400 to-sky-500 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-10 flex items-center justify-center">
+              <span className="text-white text-lg font-semibold">Audio and reserch category</span>
             </div>
 
             {/* Image */}
             <img
               src={img}
               alt={`Slide ${idx}`}
-              className="w-full h-full object-cover relative z-20"
+              className="w-full h-full object-cover relative z-0"
             />
           </div>
         ))}
