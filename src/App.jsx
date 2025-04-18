@@ -15,8 +15,8 @@ import TeamAndServices from "./components/TeamAndServices";
 import KeyBenefits from "./components/KeyBenefits";
 import ConsultationForm from "./components/ConsultationForm";
 import BlogSection from "./components/BlogSection";
-import ProjectMember from "./components/ProjectMember";
-import ProjectShowcase from "./components/ProjectShowcase";
+// import ProjectMember from "./components/ProjectMember";
+// import ProjectShowcase from "./components/ProjectShowcase";
 import BusinessCards from "./components/BusinessCards";
 import SmartApproach from "./components/SmartApproach";
 import HeroSection from "./components/HeroSection";
@@ -31,6 +31,9 @@ import AdvancedAnalytics from "./components/AdvancedAnalytics";
 import Organization from "./components/Organization";
 import CustomerInsights from "./components/CustomerInsights";
 import LargeBlog from "./components/LargeBlog";
+import BlogSec from "./components/BlogSec";
+import BlogCards from "./components/BlogCards";
+// import BlogCards from "./components/BlogCards";
 
 const App = () => {
   return (
@@ -66,8 +69,9 @@ const App = () => {
       {/* < SpecificServices/> */}
       <BlogSection />
       <LargeBlog/>
-      <ProjectMember />
-      <ProjectShowcase />
+      <BlogSec/>
+      {/* <BlogCards/> */}
+      <BlogCards/>
     </div>
   );
 };
