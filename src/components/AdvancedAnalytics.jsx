@@ -1,8 +1,13 @@
 import React from "react";
 import { FaArrowRight, FaFilePdf, FaFileWord } from "react-icons/fa";
+import TeamAndServices from "./TeamAndServices";
+import KeyBenefits from "./KeyBenefits";
+import ConsultationForm from "./ConsultationForm";
 
-const BusinessGrowth = () => {
+const AdvancedAnalytics  = () => {
   return (
+    <div>
+
     <div className="flex flex-col lg:flex-row p-6 gap-6">
       {/* Sidebar with Brochures */}
       <div className="w-full lg:w-1/4 bg-white border border-gray-200 flex flex-col justify-between">
@@ -43,7 +48,7 @@ const BusinessGrowth = () => {
       {/* Content Area */}
       <div className="w-full lg:w-3/4 flex flex-col gap-6">
         <img
-          src="https://fastwpdemo.com/demo/consultive/wp-content/uploads/2022/04/business-growth.jpg"
+          src="https://fastwpdemo.com/demo/consultive/wp-content/uploads/2022/05/advanced-analytics.jpg"
           alt="Business Growth"
           className="w-full object-cover"
         />
@@ -70,7 +75,12 @@ const BusinessGrowth = () => {
         </div>
       </div>
     </div>
+    <TeamAndServices/>
+    <KeyBenefits/>
+    <ConsultationForm/>
+    </div>
+
   );
 };
 
-export default BusinessGrowth;
+export default AdvancedAnalytics ;

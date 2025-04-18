@@ -1,5 +1,4 @@
 import React from 'react';
-// import aboutImage from '../assets/about.jpg'; 
 
 const About = () => {
   return (
@@ -52,6 +51,8 @@ const About = () => {
           </div>
         </div>
       </div>
+      
+      
     </section>
   );
 };
